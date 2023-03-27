@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Pompadur; 
+  src: url(assets/3172-font.otf); 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Pompadur;
+}
+
+body {
+  background: url(/assets/desktop_background.png) no-repeat center / cover;
+  height: 100vh;
+}
+
+.main {
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title, .subtitle {
+  text-align: center;
+  max-width: 343px;
+}
+
+.title {
+  font-size: 41px;
+  color: #010101;
+}
+
+.subtitle {
+  font-size: 27px;
+  font-weight: 400;
+  color: #505050;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 14.5px 30px;
+  background-color: #010101;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button:active {
+  background-color: #505050;
+}
+
+.button:disabled {
+  color: #848484;
+  background-color: #505050;
+}
